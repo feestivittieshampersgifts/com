@@ -1,28 +1,28 @@
 # Feestivities Hampers & Gifts
 
-A responsive four-page brand website rebuilt from the supplied structured-site ZIP, with a dedicated Christmas & New Year hamper selector. Its visual direction is an editorial gift atelier with restrained liquid-glass surfaces, real product photography, warm paper tones and a deep berry accent; the holiday collection uses a quiet pine-and-brass seasonal palette.
+A responsive four-page brand website with a dedicated Christmas & New Year hamper selector. Its visual direction is an editorial gift atelier with restrained liquid-glass surfaces, warm paper tones and a deep berry accent; the holiday collection uses a quiet pine-and-brass seasonal palette.
 
 ## Pages
 
 - `index.html` — brand introduction, filterable gift edit, seasonal feature, occasion discovery and WhatsApp enquiry links.
 - `services.html` — hampers, gifts, flower bouquets, souvenirs and the supplied occasion categories.
-- `christmas.html` — seven selectable prices from ₦30,000 through ₦550,000, original supplied price-card photos, item lists, image enlargement and prefilled WhatsApp enquiries.
-- `contact.html` — original contact details, social links and a validated enquiry form that opens a prefilled WhatsApp message.
+- `christmas.html` — seven selectable prices from ₦30,000 through ₦550,000, source photos, item lists, image enlargement and prefilled WhatsApp enquiries.
+- `contact.html` — supplied contact details, social links and a validated enquiry form that opens a prefilled WhatsApp message.
 
-## Images and business information
+## GitHub Pages
 
-All website photos are from the uploaded source ZIP or the seasonal reference image supplied by the user; no stock or generated photography is used. The seasonal source artwork is preserved in `assets/holiday/`, while the published site uses its project-storage image paths. The smallest print on the supplied seasonal flyer is not fully legible, so the holiday page clearly asks customers to confirm those details with the business before ordering. The 275k, 360k and 550k artwork columns are especially small in the supplied original. The site retains the supplied email, WhatsApp number, and Instagram, Facebook and TikTok links. It does not invent delivery promises, locations or addresses. There is no cart, payment form or backend checkout; all enquiries continue through WhatsApp.
+The repository is public. The static site is prepared for `https://feestivittieshampersgifts.github.io/com/`, but GitHub Pages has **not** been enabled yet, so that URL is not confirmed live. The repository owner must enable Pages from the `main` branch and `/` folder in repository Settings → Pages, then enforce HTTPS. Photos from the uploaded website ZIP are bundled under `assets/images/`; the seasonal art is under `assets/holiday/`. HTML and scripts use relative asset paths that work under the `/com/` project path. `.nojekyll`, `robots.txt`, and `sitemap.xml` are included.
 
-## SEO, tracking, security and backup
+The original seasonal flyer has low-resolution small print, especially in the 275k, 360k and 550k panels. The holiday page lists the legible items and asks customers to confirm unclear package details before ordering. All photos come from the uploaded ZIP or the seasonal reference image; no stock or generated photography is used.
 
-Page-specific titles/descriptions and supplied-photo Open Graph/Twitter previews are in place. The managed site-analytics setting is enabled for publication; no GA4 Measurement ID is connected. Google Search Console, Bing Webmaster verification and Google Business Profile edits still require a live domain/ownership verification and authenticated owner account as applicable. Details and limits are in [SEO-AND-SITE-OPS.md](SEO-AND-SITE-OPS.md), and local timing results are in [SPEED-TEST.md](SPEED-TEST.md). A verified ZIP source snapshot is available as [backups/feestivities-site-backup-2026-11-14.zip](backups/feestivities-site-backup-2026-11-14.zip).
+## Search, tracking, security and backup
+
+Page-specific titles/descriptions, canonical links, supplied-photo Open Graph/Twitter previews, a sitemap and crawler policy are present. Google Search Console and Bing Webmaster ownership verification/sitemap submissions are still pending the public site and owner account verification steps. The Webdev-managed analytics setting does not track GitHub Pages, and no GA4 Measurement ID has been added. See [SEO-AND-SITE-OPS.md](SEO-AND-SITE-OPS.md), [SECURITY.md](SECURITY.md), and [SPEED-TEST.md](SPEED-TEST.md). The current source archive is [backups/feestivities-site-backup-2026-11-14.zip](backups/feestivities-site-backup-2026-11-14.zip); because the repository is public, the archive is public too. It is a source snapshot, not an automated/offsite backup service.
 
 ## Run locally
-
-Serve this folder with any static HTTP server, for example:
 
 ```sh
 python3 -m http.server 3000
 ```
 
-Then open `http://localhost:3000`.
+Open `http://localhost:3000`.
