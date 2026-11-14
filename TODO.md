@@ -1,17 +1,21 @@
 # TODO
 
-## Rebuild the three-page brand experience — complete
-- Rebuild the supplied Feestivities Hampers & Gifts website as a three-page site with a brand-led home page, gifts-and-services discovery, and contact page. **Complete.**
-- Make it uniquely better and more attractive in a classic liquid-glass style, without copying the existing design pattern or looking like AI slop; make it feel more dynamic and real. **Complete.**
-- Preserve the site's real brand content, gift and hamper services, occasion categories, phone/WhatsApp details, email, and social links. **Complete; rendered page and content review passed.**
-- Use only photos contained in the uploaded ZIP file; do not introduce other photographic imagery. **Complete; all displayed photos use the uploaded ZIP's project-storage assets.**
-- Create responsive mobile, tablet, and desktop layouts, accessible navigation, and clear routes between all three pages. **Complete; desktop and mobile layouts were visually reviewed, and route/link checks passed.**
+## Seasonal Christmas & New Year hamper page
+- [x] Add a page specially dedicated to Christmas & New Year hampers and gifts, where clients can get details of the items shown in the supplied images.
+- [x] List the legible items for each price option and provide a dropdown and selectable price cards that update the matching item list and WhatsApp enquiry.
+- [x] Arrange all seven prices shown in the images in ascending order: ₦30,000, ₦50,000, ₦100,000, ₦250,000, ₦275,000, ₦360,000 and ₦550,000.
+- [x] Use the supplied seasonal artwork and preserve the original full flyer as an enlargeable image; selecting a tier shows its image or outlines its panel on the full flyer.
+- [ ] The supplied 275k, 360k and 550k price-panel columns are very narrow/low-resolution in the original flyer. For fully crisp source-image text, obtain a higher-resolution original from the business; until then the webpage labels the uncertain small print and asks customers to confirm package details on WhatsApp.
 
-## Preserve genuine product browsing and enquiry behavior — complete
-- Present the supplied gift, hamper, bouquet, souvenir and occasion content and use supplied photos to support discovery. **Complete.**
-- Keep ordering and enquiry actions on WhatsApp, explicitly preserving the manual ordering process and never implying a cart, payment, backend checkout, or website order submission. **Complete.**
-- The contact form must validate visitor details and open WhatsApp with a prefilled enquiry message rather than submit to a backend. **Complete; required fields and labels are present, and the form opens a prefilled WhatsApp message.**
+## Search, discovery, tracking and speed
+- [ ] Add/verify the live website in Google Search Console. This requires the public production domain and its domain/DNS or HTML verification method.
+- [ ] Optimize the already-created Google Business Profile for the account FeestivittiesHampersgifts01@gmail.com and business name “Feestivities Hampers & Gifts.” Public profile edits still require an authenticated account session and review of the existing profile data; no address or opening hours should be invented.
+- [x] Enable the managed project's site-analytics setting. It is configured as enabled and will collect on a published site; a GA4 property/measurement ID has not been connected.
+- [ ] Verify the live site in Bing Webmaster Tools and submit its sitemap. This requires the public production domain and ownership verification.
+- [x] Run a local Preview speed preflight for page and asset response sizes/timing; production PageSpeed Insights and field Core Web Vitals still require the live public URL.
+- [x] Rewrite page titles and descriptions for the four pages and add supplied-photo Open Graph/Twitter preview metadata. Absolute canonical/og:url tags are intentionally omitted until the real public origin is known.
 
-## Preserve and present the original business contact information — complete
-- Keep the supplied WhatsApp number and link, email address, and Instagram, Facebook, and TikTok links available on the contact page and across the site where appropriate. **Complete; supplied contact values and social links are retained.**
-- Do not invent prices, testimonials, delivery promises, locations, addresses, or other business facts absent from the supplied website. **Complete.**
+## Backup and security
+- [x] Create and integrity-check `backups/feestivities-site-backup-2026-11-14.zip`; it includes the current source, seasonal/social assets, original uploaded website ZIP, and supplied reference image.
+- [x] Keep the static site on a minimal security posture: no checkout, credential capture, or enquiry backend; no third-party JavaScript library; strict-origin referrer policy; and `noopener noreferrer` on off-site new-tab links. Published HSTS is provided by the managed host.
+- [ ] Verify production response security headers and update the backup after a future published-domain launch; no custom CSP or host headers are asserted from Preview.
