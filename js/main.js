@@ -3,6 +3,17 @@
   const makeWhatsAppUrl = (message) => `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   const brand = "Feestivities Hampers & Gifts";
 
+  const calendarYear = (() => {
+    try {
+      return new Intl.DateTimeFormat("en-NG", { timeZone: "Africa/Lagos", year: "numeric" }).format(new Date());
+    } catch {
+      return String(new Date().getFullYear());
+    }
+  })();
+  document.querySelectorAll("[data-calendar-year]").forEach((element) => {
+    element.textContent = calendarYear;
+  });
+
   // Keep the product links usable without JavaScript, and refine their prefilled text when available.
   document.querySelectorAll("[data-whatsapp]").forEach((link) => {
     const item = link.getAttribute("data-whatsapp");

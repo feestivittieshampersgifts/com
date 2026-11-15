@@ -9,6 +9,10 @@
 - [x] Show each newly separated panel on its matching selectable price option and item list, so customers can see which items belong to each of the three prices.
 - [ ] Confirm the source's unusual 360k phrase “Pack of 2 or Three Chunks” and the remaining 550k garlic-item wording with the business; the page marks these as unclear instead of guessing.
 
+## Annual copyright renewal
+- [x] For this website, make the copyright notice “© 2026. All rights reserved” automatically renew every year following the calendar. All four page footers display the current year from the Africa/Lagos calendar; the year changes automatically at the new calendar year.
+- [x] Keep the notice and business information unchanged; only advance the year.
+
 ## GitHub Pages, SEO and tracking
 - [x] Make the repository public, as explicitly approved by the owner.
 - [x] Prepare all four static pages for GitHub Pages under the `/com/` repository path, using bundled supplied ZIP photos and relative asset paths.
@@ -25,4 +29,4 @@
 - [x] Keep the static site free of checkout, payment capture, passwords and server-side enquiry storage; enquiries open WhatsApp.
 - [x] Add a same-origin CSP meta policy, strict-origin referrer policy and `noopener noreferrer` on off-site new-tab links; the four-page Preview render succeeded.
 - [ ] Verify production CSP and HTTPS after GitHub Pages is enabled; custom host response headers are not asserted.
-- [x] Refresh and integrity-check `backups/feestivities-site-backup-2026-11-15.zip` with the newly supplied source photo and three crops. The ZIP and all manifest hashes passed. Do not include API keys, verification secrets or customer records.
+- [x] Refresh and integrity-check `backups/feestivities-site-backup-2026-11-15.zip` after the copyright renewal update; the ZIP and SHA-256 manifest passed. Do not include API keys, verification secrets or customer records.

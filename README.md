@@ -9,6 +9,10 @@ A responsive four-page brand website with a dedicated Christmas & New Year hampe
 - `christmas.html` — seven selectable prices from ₦30,000 through ₦550,000, tier-specific source photos, item lists, image enlargement and prefilled WhatsApp enquiries.
 - `contact.html` — supplied contact details, social links and a validated enquiry form that opens a prefilled WhatsApp message.
 
+## Copyright year
+
+The copyright footer on all four pages updates its year from the `Africa/Lagos` calendar when a visitor loads the site. Only the year changes; the copyright wording and hamper prices and contents remain as provided.
+
 ## Seasonal tier artwork
 
 The ₦275,000, ₦360,000 and ₦550,000 price panels are now separate full-height images cropped from the newly supplied source photo. Choosing one of those prices updates the large image, item list and WhatsApp message together. The page labels the 360k phrase “Pack of 2 or Three Chunks” and one 550k garlic-item line as unclear in the source, rather than guessing. The original image is kept at `assets/holiday/source/hamper-price-list-reference.png`. All website photos come from the uploaded site ZIP or the supplied seasonal references; no stock or generated photography is used.
