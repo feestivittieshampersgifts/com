@@ -8,11 +8,15 @@ Google Search Console and Bing Webmaster Tools are **not verified and the sitema
 
 The existing Google Business Profile has not been reviewed or edited in an authenticated owner session. Before proposing changes, inspect current profile category, address/service area, phone, URL, hours, description and imagery; get owner confirmation for public edits and do not invent facts.
 
+## Seasonal hamper imagery and copy
+
+The newly supplied full-height source image has separate 275k, 360k and 550k panels, cropped individually and shown with the matching selected price and HTML item list. The complete crop is retained for zoom and is not blended with neighboring panels. A few printed names remain ambiguous: the 360k panel says “Pack of 2 or Three Chunks,” and one 550k line begins with “Garlic.” Those phrases are identified as unclear on the page instead of being silently guessed.
+
 ## Tracking and speed
 
 The Manus/Webdev analytics setting does not carry over to GitHub Pages. No GA4 property/tag or Measurement ID has been connected; actual visitor analytics remains pending the owner's GA4 property/ID and authorization. The image-tier selector supports a GA4 `select_item` event only when a `gtag` tag is installed.
 
-`SPEED-TEST.md` records five-request local loopback measurements for the current Pages-ready files and representative images. These are not public-network, Google PageSpeed Insights or field Core Web Vitals results. Run production performance and mobile/desktop Core Web Vitals checks only after the live URL is reachable.
+`SPEED-TEST.md` records five-request local loopback measurements for the current Pages-ready files and the three separate tier crops. These are not public-network, Google PageSpeed Insights or field Core Web Vitals results. Run production performance and mobile/desktop Core Web Vitals checks only after the live URL is reachable.
 
 ## Security posture
 
@@ -20,4 +24,4 @@ This is a static brochure/product site with no checkout, payment capture, passwo
 
 ## Backup
 
-`backups/feestivities-site-backup-2026-11-14.zip` is a point-in-time archive of website source, local image assets, the original uploaded website ZIP, the supplied seasonal reference image and an internal SHA-256 manifest. Its ZIP integrity and manifest are checked during creation. The repository is public, so the archive is public. This is a source snapshot, not an automated/offsite schedule, an external-account backup or a production database backup; the site has no application database.
+`backups/feestivities-site-backup-2026-11-15.zip` is a point-in-time archive of website source, local image assets, the original uploaded website ZIP, both seasonal reference images, the separately cropped tier images and an internal SHA-256 manifest. Its ZIP integrity and manifest are checked during creation. The repository is public, so the archive is public. This is a source snapshot, not an automated/offsite schedule, an external-account backup or a production database backup; the site has no application database.

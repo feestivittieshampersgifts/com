@@ -52,20 +52,17 @@
 .holiday-price-card { display: flex; flex-direction: column; align-items: stretch; gap: 8px; min-width: 0; padding: 7px; border: 1px solid rgba(45,32,30,.12); border-radius: 12px; color: var(--ink-soft); background: rgba(255,255,255,.24); cursor: pointer; text-align: left; transition: transform .2s ease, border .2s ease, background .2s ease, box-shadow .2s ease; }
 .holiday-price-card:hover { transform: translateY(-3px); border-color: rgba(23,54,45,.42); }
 .holiday-price-card.is-selected { border-color: var(--holiday-green); background: rgba(255,255,255,.66); box-shadow: 0 0 0 2px rgba(23,54,45,.12); }
-.holiday-price-card img { width: 100%; height: clamp(44px, 6.4vw, 80px); border-radius: 7px; background: #ede5d5; object-fit: cover; object-position: center; }
+.holiday-price-card img { width: 100%; height: clamp(44px, 6.4vw, 80px); border-radius: 7px; background: #ede5d5; object-fit: contain; object-position: center; }
 .holiday-price-card span { font-size: clamp(.56rem, .84vw, .74rem); font-weight: 750; line-height: 1.25; text-align: center; }
 .selected-hamper-layout { display: grid; grid-template-columns: minmax(260px, .82fr) minmax(0, 1.18fr); align-items: start; gap: clamp(27px, 5vw, 65px); padding-top: clamp(25px, 4vw, 45px); }
 .package-art { position: sticky; top: 100px; display: grid; justify-items: center; gap: 10px; min-width: 0; margin: 0; }
 .package-image-button { position: relative; display: block; width: 100%; padding: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,.87); border-radius: 18px; background: linear-gradient(145deg, #fff, #e9e1d5); box-shadow: 0 18px 42px rgba(40,30,25,.12), inset 0 1px rgba(255,255,255,.9); cursor: zoom-in; }
-.package-image-button > img { display: block; width: 100%; max-height: 460px; aspect-ratio: 1.47; border-radius: 12px; background: #e4ddcf; object-fit: cover; object-position: center; transition: transform .4s ease; }
+.package-image-button > img { display: block; width: 100%; max-height: 460px; aspect-ratio: 1.47; border-radius: 12px; background: #e4ddcf; object-fit: contain; object-position: center; transition: transform .4s ease; }
 .package-image-button:hover > img { transform: scale(1.025); }
-.package-art.is-premium .package-image-button > img { aspect-ratio: 16/9; }
+.package-art.has-portrait .package-image-button { display: grid; min-height: 0; place-items: center; }
+.package-art.has-portrait .package-image-button > img { width: auto; max-width: 100%; height: auto; max-height: none; aspect-ratio: auto; object-fit: contain; }
 .package-image-zoom { position: absolute; right: 15px; bottom: 15px; display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid rgba(255,255,255,.72); border-radius: 999px; color: #fff; background: rgba(17,38,29,.74); box-shadow: 0 4px 15px rgba(0,0,0,.15); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); font-size: .63rem; font-weight: 700; }
 .package-image-zoom b { font-size: .88rem; font-weight: 400; }
-.premium-package-focus { position: absolute; z-index: 2; top: 27.3%; width: 7.8%; height: 60%; border: 2px solid #efd18d; border-radius: 5px; background: rgba(239,209,141,.1); box-shadow: 0 0 0 9999px rgba(10,16,12,.12), 0 0 16px rgba(220,182,105,.6); pointer-events: none; transition: left .3s ease; }
-.premium-package-focus[data-column="0"] { left: 72.3%; }
-.premium-package-focus[data-column="1"] { left: 79.8%; }
-.premium-package-focus[data-column="2"] { left: 87.3%; }
 .package-art figcaption { color: var(--muted); font-size: .65rem; text-align: center; }
 .package-details { min-width: 0; padding: 7px 4px 4px; }
 .package-details > .eyebrow { margin-bottom: 12px; }
@@ -127,7 +124,6 @@
   .selected-hamper-layout { grid-template-columns: 1fr; gap: 24px; }
   .package-art { position: relative; top: auto; width: min(100%, 610px); margin-inline: auto; }
   .package-image-button > img { max-height: 420px; }
-  .premium-package-focus { top: 27.3%; height: 60%; }
   .holiday-how-layout { grid-template-columns: 1fr; gap: 30px; }
   .holiday-how-copy { max-width: 630px; }
 }
@@ -154,7 +150,6 @@
   .holiday-select-wrap select { min-height: 50px; font-size: .74rem; }
   .package-image-button { padding: 5px; border-radius: 14px; }
   .package-image-button > img { aspect-ratio: 1.34; border-radius: 10px; }
-  .package-art.is-premium .package-image-button > img { aspect-ratio: 16/9; }
   .package-image-zoom { right: 10px; bottom: 10px; padding: 8px 10px; font-size: .58rem; }
   .package-details > h3 { font-size: 2.2rem; }
   .package-list { padding: 14px 13px 11px; }
@@ -167,5 +162,5 @@
   .package-image-close { top: 15px; right: 15px; width: 38px; height: 38px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .holiday-teaser-art img, .holiday-price-card, .package-image-button > img, .premium-package-focus { transition: none; }
+  .holiday-teaser-art img, .holiday-price-card, .package-image-button > img { transition: none; }
 }
